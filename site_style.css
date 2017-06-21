@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Slabo+27px');
+
+header {
+	text-align: center;
+}
+
+body {
+	background-color: #F1ECED;
+	color: #1A1A1A;
+	font-family: 'Dosis', sans-serif;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	color: #39CD7C;
+}
+
+header a {
+	margin: 20px;
+	font-family: 'Slabo 27px', serif;
+}
+
+header a h1 {
+	display: inline;
+}
+
+footer {
+	text-align: center;
+}
+
+.centered {
+	text-align: center;
+}

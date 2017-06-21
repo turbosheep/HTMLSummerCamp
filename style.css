@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+	background: #B3F07A;
+	background: linear-gradient(#B3F07A, blue, green);
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+	color: #FAFF75;
+	text-align: center;
+	border-style: solid;
+	border-width: 10px;
+}
+
+p {
+	background-color: black;
+}
+
+#button {
+	text-align:center;
+}
+
+img {
+	max-width: 100px;
+}
+
+.hello {
+	color: #51EDB4;
+}
+
+#hannah {
+	background: red;
+}
