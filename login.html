@@ -1,4 +1,8 @@
-<html>
+<html >
+<link rel="stylesheet" href="gradient.css">
+<script src="gradient.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
 	<script type="text/javascript">
 		
 		
@@ -9,11 +13,22 @@
 			var user = "admin";
 			var pass = "admin";
 			
-			if(username.value === user && pswd.value === pass) {
-				console.log('You are logged in.');
+			var users = {};
+				
+				users["admin"] = "admin";
+				users["burger"] = "fries";
+				users["shake"] = "strawberry";
+				
+			if(users[username.value] === pswd.value) {
 				window.open('index.html','_self', false);
 			}
 			
+			
+//			if(username.value === user && pswd.value === pass) {
+//				console.log('You are logged in.');
+//				window.open('index.html','_self', false);
+//			}
+			console.log(users[username.value]);	
 			
 			
 			console.log(username.value);
@@ -27,16 +42,18 @@
 	<head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="site_style.css">
-
+	<link rel="stylesheet" href="style.css">
+	
 	</head>
 
-	<body>
+	<body class="gradient" style= "font-size: 50px;">
 		<form>
-			Username:<input type="text" id="username">
+		<div>
+			Username:<input class="gradient3" type="text" id="username">
 			<br>
-			Password:<input type="password" id="pwd">
-			
-			<button type="button" onclick="login()"> Log in </button>
+			Password:<input class ="gradient3" type="password" id="pwd">
+		</div>
+			<button style="height: 300px; width: 600px; font-size: 60px" type="button" class="btn btn-warning hvr-grow" onclick="login()"> Log in </button>
 		</form>
 	
 	</body>
